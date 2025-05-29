@@ -208,55 +208,55 @@ pub fn add(left: u64, right: u64) -> u64 {
 
 // // Running a Subset of Tests by Name: - this allow a dev to test code in a particular area - you can then run 'cargo test' the name / names of the test/s you want to run as an argument.
 
-    pub fn add_three(a: usize) -> usize {
-        a + 3
-     }
+    // pub fn add_three(a: usize) -> usize {
+    //     a + 3
+    //  }
 
-    #[cfg(test)]
-    mod tests {
-        use super::*;
+    // #[cfg(test)]
+    // mod tests {
+    //     use super::*;
 
-        #[test]
-        fn add_three_and_three() {
-            let result = add_three(3);
-            assert_eq!(result, 6);
-        }
+    //     #[test]
+    //     fn add_three_and_three() {
+    //         let result = add_three(3);
+    //         assert_eq!(result, 6);
+    //     }
 
-        #[test]
-        fn add_three_and_four() {
-            let result = add_three(4);
-            assert_eq!(result, 7);
-        }
+    //     #[test]
+    //     fn add_three_and_four() {
+    //         let result = add_three(4);
+    //         assert_eq!(result, 7);
+    //     }
 
-        #[test]
-        fn one_hundred() {
-            let result = add_three(100);
-            assert_eq!(result, 103);
-        }
+    //     #[test]
+    //     fn one_hundred() {
+    //         let result = add_three(100);
+    //         assert_eq!(result, 103);
+    //     }
 
-    // Ignoring some Test Unless Speciafically Requestd
+    // // Ignoring some Test Unless Speciafically Requestd
 
-        #[test]
-        fn does_it_work() {
-            let result = add(4, 5);
-            assert_eq!(result, 9);
-        }
+    // //     #[test]
+    // //     fn does_it_work() {
+    // //         let result = add(4, 5);
+    // //         assert_eq!(result, 9);
+    // //     }
 
-        #[test]
-        #[ignore]
-        fn expensive_test() {
+    // //     #[test]
+    // //     #[ignore]
+    // //     fn expensive_test() {
 
-        }    
-    }
+    // //     }    
+    // // }
 
 
-    // Testing Private functions (Rust allows it)
-    pub fn add_five(a: usize) -> usize {
-        internal_adder(a, 5)
-    }
-    fn internal_adder(left: usize, right:usize) -> usize {
-        left + right
-    }
+    // // Testing Private functions (Rust allows it)
+    // pub fn add_five(a: usize) -> usize {
+    //     internal_adder(a, 5)
+    // }
+    // fn internal_adder(left: usize, right:usize) -> usize {
+    //     left + right
+    // }
 
     // #[cfg(test)]
     // mod tests {
@@ -268,6 +268,10 @@ pub fn add(left: u64, right: u64) -> u64 {
     //         assert_eq!(result, 10);
     //     }
     // }
+
+        
+
+        
 
 
 
